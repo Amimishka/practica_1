@@ -1,9 +1,9 @@
 /* 1 крутая задачка узнаем за сколько времени один человек задаст один вопрос  */
-function testQuestionCount(rateArtemka, rateGrishka){
-    const questionCount = 1 (1/rateArtemka - 1/rateGrishka);// аа разница
+function testQuestionCount(rateArtemka, rateGrishka,diff){
+    const questionCount = diff / (1/rateArtemka - 1/rateGrishka);// аааа разница
     return questionCount;
 }
-console.log(testQuestionCount(14,28,1))
+console.log("Первая задача: ", testQuestionCount(14,28,1))
 
        /** 2 задачка о машиночках**/
 function findPrintSpeeds(totalPages, time1, time2, diff) {
@@ -19,17 +19,16 @@ function findPrintSpeeds(totalPages, time1, time2, diff) {
 
   return null; 
 }
-console.log(findPrintSpeeds(340, 10, 15, 4));
+console.log("Вторая задачка:", findPrintSpeeds(340, 10, 15, 4));
 
 
-       /** 3 задачка о якорных барабанах внизу непонятное слово это якорь и длина одной ручки ворот**/
-           function calculateAnchorForce(mass, radius, handleLength) {
-                       const g=9.8; 
-                     const force = (mass * g * radius) / (2 * handleLength);
-                    return force;
-                  }
-                   console.log(calculateAnchorForce(50, 0.2, 1));
-
+  /** 3 задачка о якорных барабанах внизу непонятное слово это якорь и длина одной ручки ворот**/
+   function calculateAnchorForce(mass, radius, handleLength) {
+     const g=9.8; 
+     const force = (mass * g * radius) / (2 * handleLength);
+    return force;
+     }
+    console.log("Третья задачка:", calculateAnchorForce(50, 0.2, 1));
 
 
 /** 4 задачка о трубёшках**/
@@ -43,21 +42,20 @@ const rateSecond = rateBoth - rateFirst;
 
   return timeSecond;
 }
-console.log(findSecondPipeTime(8, 12));
+console.log("Четвертая задачка:",findSecondPipeTime(8, 12));
 
 
 /** 5 задачка Анька и Танька**/
 
 function findAnyaTime(togetherTime, tanyaTime) {
     const rateTogether = 1 / togetherTime; // доля грядки в минуту двумя
-    const rateTanya = 1 / tanyaTime;       // доля грядки в минуту танькой
+    const rateTanya = 1 / tanyaTime;       // доля грядки в минуту танком
     const rateAnya = rateTogether - rateTanya;
     const timeAnya = 1 / rateAnya;
     return timeAnya; // за сколько минут Аня пропалывает грядку одна
   }
   
-  // Пример из задачи:
-  console.log(findAnyaTime(36, 117));
+  console.log("Ну наконец-то пятая задачка:", findAnyaTime(36, 117));
    
 
 
